@@ -47,11 +47,12 @@
 		</div>
 	</section>
 
-	<!-- script for get api ajax -->
+
 
 	<!-- ajax cdn  -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
+			// <!-- script for get api ajax -->
 		$(document).ready(function () {
 			$.ajax({
 				url: "https://api.kickofflabs.com/v1/demoDta/leaderboard",
@@ -60,7 +61,7 @@
 					console.log(data
 					);
 
-					// for each loop till 6  for get data from api'
+		
 					 
 					$.each(data.leads, function (index, value) {
 
@@ -75,8 +76,6 @@
 							
 					
 
-					
-						// append data in table
 					
 					});
 					// console.log(data.leaderboard[0].name);
